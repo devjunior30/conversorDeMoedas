@@ -3,3 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+input label {
+    display: block;
+}
+
+#logo {
+    width: 100px;
+}

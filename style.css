@@ -2,12 +2,40 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
 }
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #66CDAA;
 
-input label {
-    display: block;
 }
 
 #logo {
-    width: 100px;
+    width: 176px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 27px;
+    border-radius: 12px;
+}
+
+#sectionInputs {
+    background-color: rgb(169,169,169);
+    padding: 33px;
+    border-radius: 22px;
+    margin-top: 23px;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    margin-left: 15px;
+}
+
+input {
+    text-align: center;
+    height: 29px;
+    border: none;
+    border-radius: 5px;
 }

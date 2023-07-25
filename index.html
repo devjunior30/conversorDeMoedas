@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <script src="script.js"></script>
     <title>CONVERSOR DE MOEDAS</title>
 </head>
+
 <body>
     <div> <!--DIV MÃE-->
-         <img id="logo" src="/assets/logoGif.gif" alt=""></img>
+        <img id="logo" src="/assets/logoGif.gif" alt=""></img>
 
-         <section>
+        <section id="sectionInputs">
 
             <label for="real">Converter de</label>
             <input id="real" type="number" placeholder="R$ Real brasileiro">
@@ -24,23 +29,21 @@
 
             <button>Converter</button>
 
-         </section>
+            <section>
+                <img id="brazil" src="assets/BRASIL.png" alt="">
+                <label for="brazil">Real</label>
 
-         <section>
+                <p>R$0.0</p>
 
-            <img id="brazil" src="assets/BRASIL.png" alt="">
-            <label for="brazil">Real</label>
+                <img id="seta" src="assets/SETA.png" alt="">
 
-            <p>R$0.0</p>
+                <img id="usa" src="assets/USA.png" alt="">
+                <label for="usa">Dólar americano</label>
 
-            <img src="assets/SETA.png" alt="">
+                <p>US$0.0</p>
+            </section>
 
-            <img id="usa" src="assets/USA.png" alt="">
-            <label for="usa">Dólar americano</label>
-
-            <p>US$0.0</p>
-
-         </section>
+        </section>
 
 
 
@@ -57,4 +60,5 @@
 
 
 </body>
+
 </html>

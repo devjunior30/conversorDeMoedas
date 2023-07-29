@@ -5,36 +5,36 @@
     font-family: 'Oswald', sans-serif;
 }
 
-#divMãe {
-    display: flex;
-}
-
 body{
     display: flex;
     justify-content: center;
     background-color: #8A2BE2;
-
+    padding: 30px;
 }
 
 #logo {
-    margin-top: 27px;
     border-radius: 12px;
-    width: 338px;
-    height: fit-content;
-    position: relative;
-    top: 89px;
+    width: 168px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 #sectionInputs {
     background-color: rgb(169,169,169);
     padding: 33px;
     border-radius: 22px;
-    margin-top: 23px;
+    margin-top: 11px;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 label {
     display: block;
-    font-size: 13px;
+    font-size: 17px;
     margin-left: 15px;
 }
 
@@ -51,10 +51,24 @@ button {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 188px;
+    width: 233px;
     height: 44px;
     border-radius: 12px;
     border: none;
     background-color: purple;
     color: white;
+}
+
+#sectionImgs {
+    border: 2px solid purple;
+    border-width: 4px;
+    width: 226px;
+    margin-top: 23px;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+img #brazil {
+    
+
 }

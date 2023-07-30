@@ -8,67 +8,91 @@
 body{
     display: flex;
     justify-content: center;
-    background-color: #8A2BE2;
+    background-color: #8A51FC;
     padding: 30px;
 }
 
 #logo {
     border-radius: 12px;
-    width: 168px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 300px;
+    margin: 20px auto;
     display: block;
 }
 
 #sectionInputs {
     background-color: rgb(169,169,169);
-    padding: 33px;
     border-radius: 22px;
-    margin-top: 11px;
-    width: 20vw;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    width: 375px; 
+    padding: 44px 24px 23px;
 }
 
-label {
+.labelPrimario {
     display: block;
-    font-size: 17px;
-    margin-left: 15px;
+    font-size: 14px;
+    Line-height: 18px;
+    margin-bottom: 5px;
+    margin-top: 7px;
 }
 
 input {
-    text-align: center;
-    border: 3px solid #8A2BE2;
-    border-radius: 10px;
-    width: 233px;
-    margin: 12px;
-    height: 38px;
+    width: 327px;
+    height: 48px;
+    border-radius: 4px;
+    border: 1px solid #BBBBBB;
+    padding: 18px;
+}
+
+input:focus {
+    background-color: #8A2BE2;
+    border-color: aqua;
+    color: white;
+}
+
+input::placeholder {
+    color: black;
 }
 
 button {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 233px;
-    height: 44px;
-    border-radius: 12px;
+    margin: 15px auto;
+    width: 327px;
+    height: 48px;
     border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: 500;
     background-color: purple;
     color: white;
 }
 
 #sectionImgs {
-    border: 2px solid purple;
-    border-width: 4px;
-    width: 226px;
-    margin-top: 23px;
-    border-radius: 15px;
-    padding: 15px;
+    width: 327px;
+    border: 2px solid #772FD3;
+    display: block;
+    padding: 10px 24px 23px;
 }
 
-img #brazil {
-    
+#brazil, #usa{
+    width: 44px;
+    margin: 0 auto;
+    display: block;
+}
 
+.label {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+p{
+    font-size: 20px;
+    color: #2E8B57;
+    margin-bottom: 11px;
+    text-align: center;
+}
+
+#seta{
+    width: 35px;
+    margin: 22px auto;
+    display: block;
 }

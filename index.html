@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
     <script src="script.js"></script>
     <title>CONVERSOR DE MOEDAS</title>
 </head>
@@ -19,22 +19,34 @@
         <section id="sectionInputs">
 
             <label class="labelPrimario" for="real">Converter de:</label>
-            <input id="real" type="number" placeholder="R$ Real brasileiro">
+            <select name="" id="">
 
-            <label class="labelPrimario" for="dolar">Converter para:</label>
-            <input id="dolar" type="number" placeholder="US$ Dólar americano">
+                <option value="">R$ Real brasileiro</option>
+                <option value="">US$ Dólar americano</option>
 
-            <h1>Valor</h1>
+            </select>
 
+            <label class="labelPrimario" for="real">Converter de:</label>
+            <select name="" id="">
+
+                <option value="">US$ Dólar americano</option>
+                <option value="">€ Euro</option>
+
+            </select>
+
+            <label> Valor:
+                <input type="text" placeholder="R$ 10.000,00" disabled />
+            </label>
             <p id="firstP"></p>
 
             <button onclick="soma()">Converter</button>
 
             <section id="sectionImgs">
+                
                 <img id="brazil" src="assets/BRASIL.png" alt="simbolo da bandeira do BRASIL">
                 <label class="label" for="brazil">Real:</label>
 
-                <p>R$0.0</p>
+                <p>R$0,0</p>
 
                 <img id="seta" src="assets/SETA.png" alt="arrow/seta para baixo">
 

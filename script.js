@@ -1,11 +1,17 @@
-function soma() {
-    let real = document.getElementById("real").value
-    let dolar = document.getElementById("dolar").value
+let convertButton = document.querySelector("#buttonConvertValues")
 
-    let resultado = Math.floor(real/5.08)
+function converted() {
 
-    firstP.innerHTML = "$" + resultado
+    let inputValue = document.querySelector("#inputValues").value
 
-    label.innerHTML = "R$" + resultados
-     
+    let dolarToday= 4.65
+
+    let result = inputValue / dolarToday
+
+    BRL.innerHTML = inputValue
+
+    US.innerHTML = result
+    
 }
+
+convertButton.addEventListener("click", converted)

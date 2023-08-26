@@ -1,43 +1,57 @@
 let convertButton = document.querySelector("#buttonConvertValues")
+let selectsReplace = document.querySelector(".selects")
 
 function converted() {
-
     let inputValue = document.querySelector("#inputValues").value
-    let selectsReplace = document.querySelector(".selects")
-
     let dolarToday = 4.65
     let euroToday = 5.20
 
     if (selectsReplace.value == "dolar") {
 
+        US.innerHTML = new Intl.NumberFormat("en-US", {
+            style: "currency",
+            currency: "UDS"
+        }).format(inputValue / dolarToday)
+
         BRL.innerHTML = new Intl.NumberFormat("pt-BR", {
             style: "currency",
             currency: "BRL"
         }).format(inputValue)
-
-        let result = inputValue / dolarToday
-        US.innerHTML = new Intl.NumberFormat("en-US", {
-            style: "currency",
-            currency: "UDS"
-        }).format(result)
 
     }
 
     if (selectsReplace.value == "euro") {
 
+        US.innerHTML = new Intl.NumberFormat("de-DE", {
+            style: "currency",
+            currency: "EUR"
+        }).format(inputValue / euroToday)
+
         BRL.innerHTML = new Intl.NumberFormat("pt-BR", {
             style: "currency",
             currency: "BRL"
         }).format(inputValue)
-
-        let result = inputValue / euroToday
-
-        US.innerHTML = new Intl.NumberFormat("de-DE", {
-            style: "currency",
-            currency: "EUR"
-        }).format(result)
     }
 
 }
 
+function changeSelect() {
+    let textCurrency = document.getElementById("changeValue")
+    let image = document.getElementById("usa")
+
+    if (selectsReplace.value == "dolar") {
+        textCurrency.innerHTML = "Dolar Americano"
+        image.src = "/assets/USA.png"
+    }
+
+    if (selectsReplace.value == "euro") {
+        textCurrency.innerHTML = "Euro"
+        image.src = "/assets/EURO.png"
+    }
+}
+
+converted()
+
+selectsReplace.addEventListener("change", changeSelect)
 convertButton.addEventListener("click", converted)
+

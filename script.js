@@ -3,7 +3,7 @@ let selectsReplace = document.querySelector(".selects")
 
 function converted() {
     let inputValue = document.querySelector("#inputValues").value
-    let dolarToday = 4.65
+    let dolarToday = 5.2
     let euroToday = 5.20
 
     if (selectsReplace.value == "dolar") {
@@ -41,16 +41,17 @@ function changeSelect() {
 
     if (selectsReplace.value == "dolar") {
         textCurrency.innerHTML = "Dolar Americano"
-        image.src = "/assets/USA.png"
+        image.src = "/assets/usa.png"
     }
 
     if (selectsReplace.value == "euro") {
         textCurrency.innerHTML = "Euro"
-        image.src = "/assets/EURO.png"
+        image.src = "/assets/euro.png"
     }
-}
 
-converted()
+    converted()
+
+}
 
 selectsReplace.addEventListener("change", changeSelect)
 convertButton.addEventListener("click", converted)

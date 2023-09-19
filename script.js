@@ -69,22 +69,22 @@ function changeSelect() {
 
     if (selectsReplace.value == "dolar") {
         textCurrency.innerHTML = "Dolar Americano"
-        image.src = "./assets/usa.png"
+        image.src = "/assets/usa.png"
     }
 
     if (selectsReplace.value == "euro") {
         textCurrency.innerHTML = "Euro"
-        image.src = "./assets/euro.png"
+        image.src = "/assets/euro.png"
     }
 
     if (selectsReplace.value == "libra") {
         textCurrency.innerHTML = "Libra"
-        image.src = "./assets/libra.png"
+        image.src = "/assets/libra.png"
     }
 
     if (selectsReplace.value == "bitcon") {
         textCurrency.innerHTML = "Bitcons"
-        image.src = "./assets/bitcoin.png"
+        image.src = "/assets/bitcoin.png"
     }
 
     converted()
